@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Header from "../components/Header";
 import Search from "../components/Search";
 import Grid from "../components/Grid";
-import Row from "../components/Row";
-import Col from "../components/Col";
 import API from "../api/randomUser.js";
 
 function Directory() {
@@ -40,13 +38,6 @@ function Directory() {
           </div>
         ))}
         <Grid>
-          <Row>
-            <Col size="md-12">
-              <h1>Grid here!</h1>
-            </Col>
-          </Row>
-          <Row>
-            <Col size="md-12">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet diam tortor, id
                 consequat mauris ullamcorper eu. Orci varius natoque penatibus et magnis dis
@@ -60,8 +51,6 @@ function Directory() {
                 mattis risus ac quam laoreet cursus. Praesent suscipit orci neque, vestibulum
                 tincidunt augue tincidunt non. Duis consequat mattis tortor vitae mattis.
               </p>
-            </Col>
-          </Row>
         </Grid>
       </div>
     );
