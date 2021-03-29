@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import API from "../../api/randomUser.js";
 import "./style.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Table from 'react-bootstrap/Table'
 
 function Grid() {
   const [data, setData] = useState([]);
@@ -20,7 +20,26 @@ function Grid() {
     <div>
        {data.map((user, index) => (
         <div key={index}>
-          <h3>{user.name.first}</h3>
+          <Table striped bordered hover>
+  <thead>
+    <tr>
+      <th>Photo</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src={user.picture.thumbnail} alt="headshot"/></td>
+      <td>{user.name.first}</td>
+      <td>{user.name.last}</td>
+      <td>{user.email}</td>
+      <td>{user.location.city}</td>
+    </tr>
+  </tbody>
+</Table>
         </div>
       ))}
     </div>
