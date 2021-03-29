@@ -21,11 +21,11 @@ function Grid() {
     <Table striped bordered hover variant="dark">
     <thead>
 <tr>
- <th class="row1">Photo</th> 
- <th class="row1">First Name</th>
- <th class="row1">Last Name</th>
- <th class="row1">Email</th>
- <th class="row1"><Button>Location</Button></th>
+ <th>Photo</th> 
+ <th>First Name</th>
+ <th>Last Name</th>
+ <th>Email</th>
+ <th><Button>Location</Button></th>
 </tr>
 </thead><tbody>
 
