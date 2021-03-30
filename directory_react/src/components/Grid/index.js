@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import API from "../../api/randomUser.js";
 import "./style.css";
 import Table from 'react-bootstrap/Table'
-import Button from 'react-bootstrap/ToggleButton'
+import Button from 'react-bootstrap/Button'
 
 function Grid() {
   const [data, setData] = useState([]);
@@ -25,7 +25,7 @@ function Grid() {
  <th>First Name</th>
  <th>Last Name</th>
  <th>Email</th>
- <th><Button>Location</Button></th>
+ <th><Button id="locBut" onClick={sortCities}>Location</Button></th>
 </tr>
 </thead><tbody>
 
@@ -42,6 +42,23 @@ function Grid() {
 </tbody>
 </Table>
 );
+
+const cityFilterButton = Document.getElementByID("#locBut");
+
+function sortCities(){
+  const [sortedData, sortData] = useState([]);
+ // call API again or rearrange exisitng array?
+
+
+//  const arrayCopy = sortedData;
+// arrayCopy.sort(function (a, b) {
+//       if (a.somekey < b.somekey) return -1;
+//       if (a.somekey > b.someKey) return 1;
+//       return 0;
+//     });
+
+}
+
 }
 
 export default Grid;
