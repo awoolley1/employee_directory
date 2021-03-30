@@ -25,7 +25,9 @@ function Grid() {
  <th>First Name</th>
  <th>Last Name</th>
  <th>Email</th>
- <th><Button id="locBut" onClick={sortCities}>Location</Button></th>
+ <th><Button id="locBut" 
+//  onClick={sortCities}
+ >Location</Button></th>
 </tr>
 </thead><tbody>
 
@@ -43,10 +45,10 @@ function Grid() {
 </Table>
 );
 
-const cityFilterButton = Document.getElementByID("#locBut");
+// const cityFilterButton = Document.getElementByID("#locBut");
 
-function sortCities(){
-  const [sortedData, sortData] = useState([]);
+// function sortCities(){
+//   const [sortedData, sortData] = useState([]);
  // call API again or rearrange exisitng array?
 
 
@@ -56,8 +58,6 @@ function sortCities(){
 //       if (a.somekey > b.someKey) return 1;
 //       return 0;
 //     });
-
-}
 
 }
 
