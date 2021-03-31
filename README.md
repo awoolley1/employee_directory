@@ -9,7 +9,7 @@
 
 #### GitHub Repository: https://github.com/awoolley1/employee_directory
 
-#### Deployed Link: 
+#### Deployed Link: https://awoolley1.github.io/employee_directory/
 
 ## Author: 
 
